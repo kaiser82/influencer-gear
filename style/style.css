@@ -182,3 +182,26 @@ header{
   font-size: 38px;
   margin-bottom: 16px;
 }
+footer{
+  background-color:#09041f;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container{
+  /* width: 262px;
+  height: 139px;
+  margin: 0 auto; */
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+.footer-container h3{
+  font-size: 24px;
+}
+.social-logo{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
