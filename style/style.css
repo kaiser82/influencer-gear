@@ -70,7 +70,18 @@ border-radius: 41px;
 background: rgb(224, 44, 109);
 color: white;
 }
+.btn-square{
 
+width: 155px;
+height: 44px;
+border: none;
+padding: 10px 24px 10px 24px;
+background: rgb(224, 44, 109);
+color: white;
+font-size: 16px;
+font-weight: 700px;
+
+}
 /* header section */
 header{
     max-width: 1200px;
@@ -114,4 +125,60 @@ header{
 .banner-img img{
   width: 100%;
   padding: 10px;
+}
+
+/* partners section */
+.partners{
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.partner-container{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  align-items: center;
+  border-top: .5px solid gray ;
+  border-bottom: .5px solid gray;
+  padding: 35px 62px;
+}
+
+.collection{
+  max-width: 1047px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.collection-title{
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.collection-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.card-title{
+  font-size: 28px;
+  font-weight: 500px;
+  margin-bottom: 6px;
+  padding: 0;
+}
+.card-price{
+  font-size: 24px;
+  font-weight: 400px;
+  margin: 6px 0;
+
+}
+.star{
+  color: orange;
+}
+.featured{
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  gap: 95px;
+}
+.featured-title{
+  font-size: 38px;
+  margin-bottom: 16px;
 }
