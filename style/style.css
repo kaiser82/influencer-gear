@@ -90,7 +90,8 @@ header{
 .nav-container{
     display: flex;
     justify-content: space-between;  
-    align-items: center;  
+    align-items: center;
+    margin-bottom: 50px;  
 }
 .nav-container .brand{
   font-size: 24px;
@@ -141,6 +142,9 @@ header{
   border-bottom: .5px solid gray;
   padding: 35px 62px;
 }
+.partner-container img{
+  width: 60%;
+}
 
 .collection{
   max-width: 1047px;
@@ -156,6 +160,18 @@ header{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
+}
+.card{
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.img-container{
+  padding: 10px;
+}
+.img-container img{
+  width: 100%;
+  
 }
 .card-title{
   font-size: 28px;
@@ -177,6 +193,12 @@ header{
   margin: 0 auto;
   display: flex;
   gap: 95px;
+}
+.featured .img-container{
+  width: 100%;
+}
+.featured .img-container img{
+  width: 100%;
 }
 .featured-title{
   font-size: 38px;
@@ -204,4 +226,70 @@ footer{
   display: flex;
   justify-content: center;
   gap: 32px;
+}
+
+@media screen and (max-width:576px) {
+  .nav-container{
+    flex-direction: column;
+  }
+  .banner{
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      
+    }
+      .banner-title{
+      font-size: 30px;
+    }
+    .partner-container{
+      grid-template-columns: repeat(4,.5fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .collection-container{
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
+    }
+    .featured{
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    .featured-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .info-container{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:920px) {
+  
+  .nav-container{
+    flex-direction: column;
+  }
+  .banner{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .banner-title{
+    font-size: 35px;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  .collection-container{
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+    .featured{
+      gap: 20px;
+    }
+     .featured-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
